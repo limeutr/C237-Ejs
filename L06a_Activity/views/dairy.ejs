@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries List</title>
+</head>
+
+<body>
+    <h1>Groceries List</h1>
+    <table border="1">
+        <tr>
+            <th>Snacks</th>
+            <th>Dairy </th>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <% snacksList.forEach((snack, index)=> { %>
+                        <li>
+                            <%= snack %>
+                        </li>
+                        <% }) %>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <% dairyList.forEach((dairy, index)=> { %>
+                        <li>
+                            <%= dairy %>
+                        </li>
+                        <% }) %>
+                </ol>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
